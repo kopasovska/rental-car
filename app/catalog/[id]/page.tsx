@@ -7,8 +7,7 @@ type Props = {
 const CarDetails = async ({ params }: Props) => {
   const { id } = await params;
   const car = await getCar(id);
-  console.log(car);
-  return <div>CarDetails</div>;
+  return <div></div>;
 };
 
 export default CarDetails;

@@ -1,9 +1,11 @@
-import { getCars } from "@/lib/api";
+import CatalogClient from "./Catalog.client";
 
-const Catalog = async () => {
-  const cars = await getCars();
-  console.log(cars);
-  return <div>Catalog</div>;
+const Catalog = () => {
+  return (
+    <section>
+      <CatalogClient />
+    </section>
+  );
 };
 
 export default Catalog;
