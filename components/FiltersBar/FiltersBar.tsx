@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 import { getBrands } from "@/lib/api";
 import { useCarStore } from "@/lib/stores/carStore";
 import css from "./FiltersBar.module.css";
+import CustomSelect from "../CustomSelect/CustomSelect";
 
-const prices = [30, 40, 50, 60, 70, 80, 90];
+const prices = ["30", "40", "50", "60", "70", "80", "90"];
 
 export default function FiltersBar() {
   const { setFilters } = useCarStore();
@@ -38,36 +39,20 @@ export default function FiltersBar() {
     <div className={css.filtersWrapper}>
       <div className={css.field}>
         <label className="text-secondary">Car brand</label>
-        <select
-          value={brand}
-          onChange={(e) => setBrand(e.target.value)}
-          className={`${css.select} text-primary`}
-        >
-          <option value="">Choose brand</option>
-          {brands.map((b) => (
-            <option key={b} value={b}>
-              {b}
-            </option>
-          ))}
-        </select>
+        <CustomSelect
+          options={brands}
+          placeholder={"Choose brand"}
+          onChange={(value) => setBrand(value)}
+        />
       </div>
-
       <div className={css.field}>
         <label className="text-secondary">Price/ 1 day</label>
-        <select
-          value={price}
-          onChange={(e) => setPrice(e.target.value)}
-          className={`${css.select} text-primary`}
-        >
-          <option value="">Choose price</option>
-          {prices.map((p) => (
-            <option key={p} value={p}>
-              {p}
-            </option>
-          ))}
-        </select>
+        <CustomSelect
+          options={prices}
+          placeholder={"Choose price"}
+          onChange={(value) => setPrice(value)}
+        />
       </div>
-
       <div className={css.field}>
         <label className="text-secondary">Car mileage / km</label>
         <div className={css.mileageGroup}>

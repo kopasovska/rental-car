@@ -8,9 +8,9 @@ Check out the project live: [RentalCar Live Demo](https://rental-car-tau-inky.ve
 
 ## Author
 
-Viktoria Kopasovska
-[GitHub](https://github.com/kopasovska)
-[LinkedIn](https://www.linkedin.com/in/kopasovska/)
+Viktoria Kopasovska - Frontend JS Developer
+
+[LinkedIn](https://www.linkedin.com/in/kopasovska/) |
 [Telegram](https://t.me/kopasovska)
 
 ## Usage
