@@ -22,7 +22,7 @@ export async function generateMetadata({
     openGraph: {
       title: `Check out ${car.brand} ${car.model} ${car.year}`,
       description: car.description.slice(0, 100),
-      url: `https://notehub.com/notes/${id}`,
+      url: `https://rental-car-git-main-viktoria-kopasovskas-projects.vercel.app/catalog/${id}`,
       siteName: "RentalCar",
       images: [
         {
