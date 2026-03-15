@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "RentalCar",
     images: [
       {
-        url: "https://drive.google.com/file/d/11qh4MBUg3NHimJxNgqrC65IrsvT7NuPd/view?usp=drive_link",
+        url: "https://drive.google.com/file/d/1OSsW1YIExOqP-0YYRJkIWBGHd1s9bM8n/view?usp=sharing",
         width: 1200,
         height: 630,
         alt: "RentalCar app banner",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     description:
       "Rent the perfect car for your journey with ease. Flexible options, transparent pricing, and 24/7 support make every drive simple and stress-free.",
     images: [
-      "https://drive.google.com/file/d/11qh4MBUg3NHimJxNgqrC65IrsvT7NuPd/view?usp=drive_link",
+      "https://drive.google.com/file/d/1OSsW1YIExOqP-0YYRJkIWBGHd1s9bM8n/view?usp=sharing",
     ],
   },
 };
