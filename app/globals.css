@@ -86,8 +86,13 @@ button {
   font-size: 24px;
   line-height: 133%;
   color: var(--white);
+}
 
-  margin-bottom: 40px;
+.heading-md {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--main);
 }
 
 .text-primary {
@@ -96,14 +101,24 @@ button {
   line-height: 125%;
   color: var(--main);
 }
+
 .text-secondary {
   font-weight: 400;
   font-size: 12px;
   line-height: 133%;
   color: var(--gray);
 }
+
 .text-accent {
   color: var(--button);
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+.text-dark {
+  color: var(--main);
 }
 
 .container {

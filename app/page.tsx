@@ -16,7 +16,7 @@ export default function Home() {
       />
       <div className={css.heroContent}>
         <h1 className="heading-xl">Find your perfect rental car</h1>
-        <h2 className="heading-lg">
+        <h2 className="heading-lg" style={{ marginBottom: "40px" }}>
           Reliable and budget-friendly rentals for any journey
         </h2>
         <Link href="/catalog" className="cta-btn">
