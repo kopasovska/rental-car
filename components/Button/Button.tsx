@@ -5,6 +5,7 @@ interface ButtonProps {
   onClick?: () => void;
   isFetching?: boolean;
   children?: React.ReactNode;
+  variant?: string;
 }
 
 export default function Button({
@@ -12,15 +13,18 @@ export default function Button({
   onClick,
   isFetching = false,
   children,
+  variant,
 }: ButtonProps) {
+  const variantClass = variant ? css[variant] : "";
+
   return (
     <button
       type={`${buttonType}`}
       onClick={onClick}
-      className={css.ctaBtn}
+      className={`${css.button} ${variantClass}`}
       disabled={isFetching}
     >
-      {children ? children : isFetching ? "Loading..." : "Load more"}
+      {isFetching ? "Loading..." : (children ?? "Load more")}
     </button>
   );
 }

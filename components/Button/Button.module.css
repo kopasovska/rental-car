@@ -1,6 +1,8 @@
-.ctaBtn {
-  padding: 12px 51px;
+.button {
+  padding: 12px;
+  margin: 0 auto;
   height: 44px;
+  width: 156px;
 
   display: flex;
   justify-content: center;
@@ -18,7 +20,20 @@
   background-color: transparent;
 }
 
-.ctaBtn:hover,
-.ctaBtn:focus {
+.button:hover,
+.button:focus {
   border-color: var(--button-hover);
+}
+
+.button.blue {
+  border: none;
+  background-color: var(--button);
+  color: var(--white);
+}
+
+.button.blue:hover,
+.button.blue:focus {
+  border: none;
+  background-color: var(--button-hover);
+  color: var(--white);
 }

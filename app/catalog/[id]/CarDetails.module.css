@@ -1,59 +1,55 @@
 .carDetailsWrapper {
   display: grid;
-  column-gap: 72px;
-  row-gap: 40px;
-  grid-template-columns: 640px 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.carImageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.carForm {
+  align-self: start;
 }
 
 .carInfo {
   grid-row: span 2;
   padding-top: 20px;
+  margin-bottom: 20px;
 
-  display: grid;
-  grid-template-rows: auto 1fr 1fr 1fr;
-  height: 100%;
-}
-
-.basicInfo {
-  margin-bottom: 68px;
-}
-
-.meta {
-  margin-bottom: 32px;
-}
-
-.firstLineWrapper,
-.secondLineWrapper {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 8px;
-}
-
-.secondLineWrapper {
-  margin-bottom: 16px;
-}
-
-.addressWrapper {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-}
-
-.icon {
-  width: 16px;
-  height: 16px;
-}
-
-.specsList {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  justify-content: space-between;
 }
 
-.specsItem {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+@media screen and (min-width: 768px) {
+  .carDetailsWrapper {
+    column-gap: 32px;
+    row-gap: 20px;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 320px auto;
+  }
+
+  .carImage {
+    width: 400px;
+    height: 320px;
+  }
+
+  .carInfo {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .carDetailsWrapper {
+    column-gap: 72px;
+    row-gap: 40px;
+    grid-template-columns: 640px 1fr;
+    grid-template-rows: 512px auto;
+  }
+
+  .carImage {
+    width: 640px;
+    height: 512px;
+  }
 }

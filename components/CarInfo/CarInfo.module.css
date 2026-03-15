@@ -1,0 +1,71 @@
+.basicInfo {
+  margin-bottom: 24px;
+}
+
+.listsWrapper {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.meta {
+  margin-bottom: 32px;
+}
+
+.firstLineWrapper,
+.secondLineWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.secondLineWrapper {
+  margin-bottom: 16px;
+}
+
+.addressWrapper {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.specsListWrapper {
+  margin-bottom: 32px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.specsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.specsItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .basicInfo {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .basicInfo {
+    margin-bottom: 68px;
+  }
+
+  .specsListWrapper {
+    margin-bottom: 0;
+  }
+}
