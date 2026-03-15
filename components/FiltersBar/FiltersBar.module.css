@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: end;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -23,7 +24,7 @@
   border-radius: 12px;
   padding: 12px 16px;
 
-  width: 160px;
+  width: 102px;
   height: 44px;
 
   background-color: var(--inputs);
@@ -50,4 +51,10 @@
 .input:focus,
 .select:focus {
   outline: 1px solid var(--gray-light);
+}
+
+@media screen and (min-width: 1440px) {
+  .input {
+    width: 160px;
+  }
 }

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     siteName: "RentalCar",
     images: [
       {
-        url: "https://drive.google.com/file/d/1OSsW1YIExOqP-0YYRJkIWBGHd1s9bM8n/view?usp=sharing",
+        url: "https://res.cloudinary.com/drvp0ky5z/image/upload/v1773613120/og-banner_fb1fcs.jpg",
         width: 1200,
         height: 630,
         alt: "RentalCar app banner",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description:
       "Explore our car rental catalog and choose the perfect vehicle for any journey. From compact cars for city drives to spacious SUVs for family trips — we have a car for every need.",
     images: [
-      "https://drive.google.com/file/d/1OSsW1YIExOqP-0YYRJkIWBGHd1s9bM8n/view?usp=sharing",
+      "https://res.cloudinary.com/drvp0ky5z/image/upload/v1773613120/og-banner_fb1fcs.jpg",
     ],
   },
 };
