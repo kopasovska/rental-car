@@ -5,7 +5,6 @@ import * as Yup from "yup";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import toast from "react-hot-toast";
-import { useState } from "react";
 
 const RentCarFormSchema = Yup.object().shape({
   name: Yup.string()
@@ -89,7 +88,7 @@ const RentCarForm = () => {
               placeholderText="Booking date"
               minDate={new Date()}
               dateFormat="dd/MM/yyyy"
-              className={css.input}
+              className={`${css.input} text-primary`}
               calendarClassName={css.customCalendar}
               autoComplete="off"
             />

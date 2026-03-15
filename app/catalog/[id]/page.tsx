@@ -22,14 +22,14 @@ export async function generateMetadata({
     openGraph: {
       title: `Check out ${car.brand} ${car.model} ${car.year}`,
       description: car.description.slice(0, 100),
-      url: `https://rental-car-git-main-viktoria-kopasovskas-projects.vercel.app/catalog/${id}`,
+      url: `https://rental-car-tau-inky.vercel.app/catalog/${id}`,
       siteName: "RentalCar",
       images: [
         {
-          url: `https://drive.google.com/file/d/11qh4MBUg3NHimJxNgqrC65IrsvT7NuPd/view?usp=drive_link`,
+          url: "https://drive.google.com/file/d/11qh4MBUg3NHimJxNgqrC65IrsvT7NuPd/view?usp=drive_link",
           width: 1200,
           height: 630,
-          alt: `Image of ${car.brand} ${car.model} ${car.year}`,
+          alt: "RentalCar app banner",
         },
       ],
       type: "article",
@@ -38,7 +38,9 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: `Check out ${car.brand} ${car.model} ${car.year}`,
       description: car.description.slice(0, 100),
-      images: [`${car.img}`],
+      images: [
+        "https://drive.google.com/file/d/11qh4MBUg3NHimJxNgqrC65IrsvT7NuPd/view?usp=drive_link",
+      ],
     },
   };
 }

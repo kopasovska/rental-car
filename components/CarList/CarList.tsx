@@ -20,7 +20,7 @@ const CarList = ({
 }: CarListProps) => {
   return (
     <div className={css.carsListWrapper}>
-      {cars.length === 0 ? (
+      {!isFetching && cars.length === 0 ? (
         <p>No cars match your search.</p>
       ) : (
         <ul className={css.carsList}>

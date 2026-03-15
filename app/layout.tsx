@@ -16,6 +16,31 @@ export const metadata: Metadata = {
   title: "RentalCar | Home",
   description:
     "Rent the perfect car for your journey with ease. Flexible options, transparent pricing, and 24/7 support make every drive simple and stress-free.",
+  openGraph: {
+    title: "RentalCar | Home",
+    description:
+      "Rent the perfect car for your journey with ease. Flexible options, transparent pricing, and 24/7 support make every drive simple and stress-free.",
+    url: `https://rental-car-tau-inky.vercel.app/`,
+    siteName: "RentalCar",
+    images: [
+      {
+        url: "https://drive.google.com/file/d/11qh4MBUg3NHimJxNgqrC65IrsvT7NuPd/view?usp=drive_link",
+        width: 1200,
+        height: 630,
+        alt: "RentalCar app banner",
+      },
+    ],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `RentalCar | Home`,
+    description:
+      "Rent the perfect car for your journey with ease. Flexible options, transparent pricing, and 24/7 support make every drive simple and stress-free.",
+    images: [
+      "https://drive.google.com/file/d/11qh4MBUg3NHimJxNgqrC65IrsvT7NuPd/view?usp=drive_link",
+    ],
+  },
 };
 
 export default function RootLayout({

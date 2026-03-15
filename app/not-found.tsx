@@ -12,10 +12,10 @@ const NotFound = () => {
   }, [router]);
 
   return (
-    <div>
+    <section>
       <h1>404 - Page not found</h1>
       <p>You will be redirected in a few seconds…</p>
-    </div>
+    </section>
   );
 };
 

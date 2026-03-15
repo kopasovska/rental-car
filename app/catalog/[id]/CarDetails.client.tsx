@@ -7,6 +7,7 @@ import css from "./CarDetails.module.css";
 import Image from "next/image";
 import RentCarForm from "@/components/RentCarForm/RentCarForm";
 import CarInfo from "@/components/CarInfo/CarInfo";
+import Loader from "@/components/Loader/Loader";
 
 const CarDetailsClient = () => {
   const { id } = useParams<{ id: string }>();
@@ -21,7 +22,7 @@ const CarDetailsClient = () => {
     refetchOnMount: false,
   });
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading) return <Loader />;
 
   if (error || !car) return <p>Some error..</p>;
 

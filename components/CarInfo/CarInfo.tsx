@@ -24,7 +24,7 @@ const CarInfo = ({ car }: CarInfoProps) => {
               <svg className={css.icon}>
                 <use xlinkHref="/icons.svg#icon-location"></use>
               </svg>
-              <p>{addressParts[1]}</p>
+              <p>{addressParts[1]},</p>
               <p>{addressParts[2]}</p>
             </div>
             <p>Mileage: {formattedMileage} km</p>
