@@ -44,3 +44,8 @@
 
   cursor: pointer;
 }
+
+.options li:hover,
+.options li:focus {
+  color: var(--main);
+}
