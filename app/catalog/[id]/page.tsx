@@ -26,9 +26,9 @@ export async function generateMetadata({
       siteName: "RentalCar",
       images: [
         {
-          url: `${car.img}`,
-          width: 600,
-          height: 300,
+          url: `https://drive.google.com/file/d/11qh4MBUg3NHimJxNgqrC65IrsvT7NuPd/view?usp=drive_link`,
+          width: 1200,
+          height: 630,
           alt: `Image of ${car.brand} ${car.model} ${car.year}`,
         },
       ],
@@ -37,7 +37,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: `Check out ${car.brand} ${car.model} ${car.year}`,
-      description: car.description.slice(0, 3),
+      description: car.description.slice(0, 100),
       images: [`${car.img}`],
     },
   };
