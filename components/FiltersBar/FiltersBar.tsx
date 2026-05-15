@@ -9,7 +9,7 @@ import CustomSelect from "../CustomSelect/CustomSelect";
 const prices = ["30", "40", "50", "60", "70", "80", "90"];
 
 export default function FiltersBar() {
-  const { setFilters } = useCarStore();
+  const { filters, setFilters } = useCarStore();
 
   const [brands, setBrands] = useState<string[]>([]);
   const [brand, setBrand] = useState("");

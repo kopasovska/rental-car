@@ -4,6 +4,7 @@ import CarList from "@/components/CarList/CarList";
 import FiltersBar from "@/components/FiltersBar/FiltersBar";
 import { getCars } from "@/lib/api";
 import { useCarStore } from "@/lib/stores/carStore";
+import { checkSubset } from "@/utils/helpers";
 import { useEffect, useState } from "react";
 
 const CatalogClient = () => {
